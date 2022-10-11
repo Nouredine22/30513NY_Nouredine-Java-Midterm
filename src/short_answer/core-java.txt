@@ -6,43 +6,63 @@ programing language is a set of codes and commands that a computer can understan
 
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer:JDK is core kit(package) used in Java, it comes with JVM and JRE
+JRE stands for "Java Runtime Environment"  an installation package that provides an environment to only run(not develop) the java program(or application)onto the machine.
+JVM stands for  Virtual Machine, because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed.
+
 
 What is an IDE?
-Answer:
+Answer: IDE is the Integrated Development Environment that provides the user interface for code development, testing and debugging features.
+It helps to organize the project artifacts that are relevant to the source code of the software application.
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer: Eclipse, IntelliJ IDEA, NetBeans, BlueJ, JDeveloper, DrJava, JCreator,
 
 Explain the entire java life cycle.
-Answer:
+Answer:Create the high-level Java text file We can use any text editor to do that this file is saved as a .java file.
+* Compile the .java file which result in a .class file using java compiler(javac) this file contains the bytecodes.
+* Load .class file into memory by the class loader.
+* Finally, the JVM reads the bytecodes in memory and translates them into machine code.
 
 What is a class?
-Answer:
+Answer:A class is the blueprint from which individual objects are created.
+
 
 What is an object?
-Answer:
+Answer: object is an instance of a class. A class is a template or blueprint from which objects are created.
+So, an object is the instance(result) of a class.
 
 What is the entry point of a Java project?
-Answer:
+Answer:he main() method is the entry point of each and every Java program.
 
 Why is the main() method static?
-Answer:
+Answer:Since main() method is the entry point of any Java application.
+There is no object of the class available at the time of starting java runtime, and because of that,
+we have to define the main() method as static. By doing that, JVM can load the class into the main memory and call the main() method.
 
 Which class is the superclass of all classes?
-Answer:
+Answer: the object class .
 
 What is difference between path and classpath variables?
-Answer:
+Answer:ATH is an environment variable used by our Operating System to locate different files, like executable files (.exe) or java binaries
+CLASSPATH is also an environment variable,is used by System or Application class loader to locate and load compile Java bytecodes stored in the .class file.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer:An abstract class is not 100% abstract. Abstract classes may contain concrete methods and/or abstract methods. Abstract classes, like interfaces, are unable to be instantiated.
+Interfaces are 100% abstract. By default, all variables declared within an interface are public, static and final, and all methods declared are considered public and abstract
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer: We can't instantiate an interface or an abstract class because it would defy the object oriented model.
+interface have only abstract methods abstract class may have abstract method
+and the object is concrete so we can not create and abstract object.
 
 What is Access Modifier?
-Answer:
+Answer: As the name suggests access modifiers in Java helps to restrict the scope of a class, constructor, variable, method, or data member.
+There are four types of access modifiers available in java:
+Default  No keyword required : accessible only within the same package.
+Private : accessible only within the same class.
+Protected :accessible within the same package or subclasses(child) in different packages.
+Public : accessible everywhere.
 
 What is OOP? Define each OOP concept.
 Answer:
