@@ -2,6 +2,8 @@
 
 What is a programming language?
 Answer:
+programing language is a set of codes and commands that a computer can understand. 
+
 
 What is a JDK composed of? Define each components?
 Answer:
