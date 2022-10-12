@@ -5,8 +5,8 @@ Answer:
 programing language is a set of codes and commands that a computer can understand. 
 
 
-What is a JDK composed of? Define each components?
-Answer:JDK is core kit(package) used in Java, it comes with JVM and JRE
+What is a JDK composed of? Define each component?
+Answer:JDK is core kit(package) used in Java, it comes with JVM and JRE.
 JRE stands for "Java Runtime Environment"  an installation package that provides an environment to only run(not develop) the java program(or application)onto the machine.
 JVM stands for  Virtual Machine, because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed.
 
@@ -65,139 +65,183 @@ Protected :accessible within the same package or subclasses(child) in different 
 Public : accessible everywhere.
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer:Object Oriented Programming it creates objects that contains both data and methods.
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer:java package contains related classes. 
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer:(Application Programming Interface). are mechanisms that enable two software components to communicate with each
+other using a set of definitions and protocols.
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer:multiple inheritances is not allowed in java, The reason behind this is to prevent ambiguity. Consider a case
+where class B extends class A and Class C and both class A and C have the same method display(). Now java compiler
+cannot decide, which display method it should inherit
 
 What is method overloading? List all of the different ways to overload.
-Answer:
+Answer: Method overloading is a form of polymorphism in OOP. Polymorphism allows objects or methods to act in different
+ ways, according to the means in which they are used. One such manner in which the methods behave according to their
+ argument types and number of arguments is method overloading. Method overloading can be done by changing:
+
+ The number of parameters in two methods.
+ The data types of the parameters of methods.
+ The Order of the parameters of methods.
 
 Explain exceptions in java and how to handle them.
-Answer:
+Answer: The try-catch is the simplest method of handling exceptions. Put the code you want to run in the try block, and
+ any Java exceptions that the code throws are caught by one or more catch blocks. This method will catch any type of
+ Java exceptions that get thrown.
 
 What is static keyword? When and how do we use it?
-Answer:
+Answer: In Java, static keyword is mainly used for memory management. It can be used with variables, methods, blocks
+and nested classes. It is a keyword which is used to share the same variable or method of a given class. Basically,
+static is used for a constant variable or a method that is same for every instance of a class.
 
 What is final keyword? When and how do we use it?
-Answer:
+Answer:is a non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible
+to inherit or override). The final keyword is useful when you want a variable to always store the same value.
+for example, the variable for months wont will always fall in between 01-12.
 
 Explain the difference between final, finally and finalize?
-Answer:
+Answer: final is an access modifier, finally is the block in Exception Handling and finalize is the method of object
+class.
 
 What is a constructor?
-Answer:
+Answer: a special method that is used to initialize objects.
 
 Can we have multiple constructors in a class?
-Answer:
+Answer: yes we can.
 
 If we don't have a constructor declared, what is called during the object creation?
-Answer:
+Answer:All In that case,Java compiler automatically provides a no-argument constructor, called "default constructor".
 
 What is "this" keyword in Java? When would we use it?
-Answer:
+Answer:Refers to the current object in a method or constructor. The most common use of the this keyword is to eliminate
+ the confusion between class attributes and parameters with the same name.
 
 What is "super" keyword in Java? What are some scenarios we would use it?
-Answer:
+Answer: super refer to superclass (parent).It is used to call superclass methods, and to access the superclass
+constructor. The most common use of the super keyword is to eliminate the confusion between superclasses and subclasses
+that have methods with the same name.
 
 What does JVM stand for?
-Answer:
+Answer: Java Virtual Machine, loads, verifies and executes Java bytecode.
 
 Is JVM platform independent?
-Answer:
+Answer:no, JVM is platform dependent, and Java is platform independent.
 
 What version of Java are you using?
-Answer:
+Answer: 18
 
 What does JAR stand for?
-Answer:
+Answer:Java ARchive. It's a file format based on the popular ZIP file format and is used for aggregating many files
+into one. Although JAR can be used as a general archiving tool,
 
 What is the difference between JDK and JVM?
-Answer:
+Answer: The JVM is an abbreviation for Java Virtual Machine. The JDK (Java Development Kit) is a software development
+ kit that develops applications in Java
 
 What is the difference between JVM and JRE?
-Answer:
+Answer:JRE identifies all the helpful class libraries needed for execution, while JVM is a subclass of JRE that decodes
+ the bytecode into machine language and other minor tasks.
 
 Explain the difference between compile-time and run-time?
-Answer:
+Answer: Compile-time is the period when the programming code  is converted to the machine.
+        Run-time is the period of time when a program is running and generally occurs after compile time.
 
 What is heap?
-Answer:
+Answer:is a special data structure in Java. A heap is a tree-based data structure and can be classified as a complete
+ binary tree.
 
 How does Java manage its memory?
-Answer:
+Answer: Java uses an automatic memory management system called a garbage collector.
 
 What is the difference between String, StringBuffer and StringBuilder?
-Answer:
+Answer:String is immutable whereas StringBuffer and StringBuilder are mutable classes. StringBuffer is thread-safe
+and synchronized whereas StringBuilder is not.
 
 What is Singleton class?
-Answer:
+Answer: a class that can have only one object (an instance of the class) at a time.
 
 What is Serialization and Deserialization?
-Answer:
+Answer: Serialization is a mechanism of converting the state of an object into a byte stream. Deserialization is the
+reverse process where the byte stream is used to recreate the actual Java object in memory.
 
 Explain the difference between While and Do..While loops?
-Answer:
+Answer: While loop checks the condition first and then executes the statement(s), whereas do while loop will execute
+the statement(s) at least once, then the condition is checked. While loop is entry controlled loop, whereas do while
+is exit controlled loop
 
 What is Enum?
-Answer:
+Answer:An enum is a special "class" that represents a group of constants(unchangeable variables, like final variables).
 
-What is Iterator?
+what is
 Answer:
 
 Which one will take more memory: an int or Integer? Why?
-Answer:
+Answer: int is a primitive data type and takes 32 bits(4 bytes) to store.
+        Integer ,is an object which takes 128 bits (16 bytes).
 
 Why are Strings considered to be immutable in Java?
-Answer:
+Answer: because of the security, synchronization and concurrency, caching, and class loading.
 
 What is constructor chaining in Java?
-Answer:
+Answer: the process of calling a sequence of constructors. We can do it in 2 ways: by using this() keyword ,
+or using super() keyword
 
 The difference between Serial and Parallel Garbage Collector?
-Answer:
+Answer: The primary difference between the serial and parallel collectors is that the parallel collector has multiple
+threads that are used to speed up garbage collection.
 
 What does JIT stands for?
-Answer:
+Answer:The Just-In-Time (JIT) compiler is a component of the Java™ Runtime Environment that improves the performance
+of Java applications at run time.
 
 Explain the process of Java garbage collection?
-Answer:
+Answer: Java garbage collection is the process by which Java programs perform automatic memory management.Java programs
+compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM,
+ objects are created on the heap, which is a portion of memory dedicated to the program.
 
 Can you guarantee the garbage collection process?
-Answer:
+Answer:No, Garbage collection does not guarantee that a program will not run out of memory.
 
 What is the difference between stack and heap in Java?
-Answer:
+Answer:The Heap Space contains all objects are created, but Stack contains any reference to those objects.
 
 What is reflection in Java and why is it useful?
-Answer:
+Answer:it is a feature. It allows an executing Java program to examine or "introspect" upon itself, and manipulate
+internal properties of the program.
 
 What is multithreading in Java?
-Answer:
+Answer: the process of executing two or more threads simultaneously for maximum utilization of the CPU.
 
 What is synchronization in Java?
-Answer:
+Answer: Synchronization  is the capability to control the access of multiple threads to any shared resource.
 
 What is a Framework?
-Answer:
+Answer:bodies of reusable pre-written code acting as templates that developers can use to create applications by
+filling in custom code as needed.
 
 What are the testing Frameworks available in Java?
-Answer:
+Answer:JBehave,
+       JUnit,
+       Serenity,
+       TestNG
+       Selenide
+       Gauge
+       Geb
+       Spock.
 
 What are jUnit and testNG?
-Answer:
+Answer: JUnit is an open-source framework used to trigger and write tests. TestNG is a Java-based framework that is
+an upgraded option for running tests.
 
 What are the dependencies for this project?
-Answer:
+Answer: SDK 18. JAVA 18
 
 What is dependency injection in Java?
-Answer:
+Answer:(DI) is the concept in which objects get other required objects from outside.
 
 Explain what static binding and dynamic binding is?
-Answer:
+Answer: Static binding uses Type information for binding while Dynamic binding uses Objects to resolve binding
