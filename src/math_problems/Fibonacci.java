@@ -9,6 +9,18 @@ public class Fibonacci {
      **/
 
     public static void main(String[] args) {
+        int a = 0;
+        int b = 1;
+        int c;
+        int i=0;
+
+        for ( i = 0 ; i < 41 ; i++) {   // I will print 41 fibonacci numbers
+            System.out.print( a + " ");
+
+            c= a+b;
+            a=b;
+            b=c;
+        }
 
     }
 }
