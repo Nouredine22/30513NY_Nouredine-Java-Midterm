@@ -132,7 +132,7 @@ Is JVM platform independent?
 Answer:no, JVM is platform dependent, and Java is platform independent.
 
 What version of Java are you using?
-Answer: 18
+Answer: 18.0.2.1
 
 What does JAR stand for?
 Answer:Java ARchive. It's a file format based on the popular ZIP file format and is used for aggregating many files
@@ -238,7 +238,7 @@ Answer: JUnit is an open-source framework used to trigger and write tests. TestN
 an upgraded option for running tests.
 
 What are the dependencies for this project?
-Answer: SDK 18. JAVA 18
+Answer: Mysql connector, mongo java friver, java json, jackson core,testNG, gson
 
 What is dependency injection in Java?
 Answer:(DI) is the concept in which objects get other required objects from outside.
