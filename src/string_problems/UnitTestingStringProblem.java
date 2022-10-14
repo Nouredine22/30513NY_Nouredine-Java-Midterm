@@ -13,11 +13,10 @@ public class UnitTestingStringProblem {
 
 
 
-        String str1 = "Cat";
-        String str2 = "Act";
+        String str1 = "cat";
+        String str2 = "act";
 
-        str1 = str1.toLowerCase();
-        str2 = str2.toLowerCase();
+
 
         if(str1.length() == str2.length()){
             //convert string to char.
